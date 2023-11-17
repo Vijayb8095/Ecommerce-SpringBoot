@@ -18,14 +18,14 @@ import lombok.Data;
 @Data
 @Component
 public class ShoppingOrder {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	int id;
-	String payment_id;
-	LocalDateTime dateTime;
-	double price;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    int id;
+    String payment_id;
+    LocalDateTime dateTime;
+    double price;
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	List<CustomerProduct> customerProducts;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    List<CustomerProduct> customerProducts;
 
 }
