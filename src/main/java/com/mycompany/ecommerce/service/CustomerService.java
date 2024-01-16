@@ -275,7 +275,7 @@ public class CustomerService {
 					details.setPaymentId(null);
 					details.setOrderId(order.get("id").toString());
 					details.setStatus(order.get("status"));
-					details.setKeyDetails("rzp_test_pXzztvFSoP8U0y");
+					details.setKeyDetails("rzp_test_J34wh4tZePzOA7");
 
 					session.setAttribute("customer", customerDao.fetchById(customer.getId()));
 					modelMap.put("details", productDao.saveDetails(details));
